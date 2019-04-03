@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Deletar Passageiro</title>
+</head>
+
+<body>
+    <div container>
+        <form method="POST" action="/Passageiro/deletarPassageiro">         
+        <table>
+            <tr>
+                <td>CPF do Passageiro desejado: </td>
+                <td><input type="number" name="cpfPassageiro" id="cdPassageiro"></td><td><input type="text"size="20" name="avisoCPF" disabled="disabled"></td>
+            </tr>   
+            <tr>
+                <td><input type="submit" value = "Realizar exclusão"></td>
+            </tr>        
+        </table>  
+    </form> 
+        <button id="myButton" class="float-left submit-button">Voltar ao menu de passageiros</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "./OpcoesPass.html";
+        };
+    </script>
+</body>
+</html>

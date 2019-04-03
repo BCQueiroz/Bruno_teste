@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Deletar Motorista</title>
+</head>
+
+<body>
+    <div container>
+        <form method="POST" action="/Motorista/deletarMotorista">         
+        <table>
+            <tr>
+                <td>CPF do Motorista desejado: </td>
+                <td><input type="number" name="cpfMotorista" id="cdMotorista"></td><td><input type="text"size="20" name="avisoCPF" disabled="disabled"></td>
+            </tr>   
+            <tr>
+                <td><input type="submit" value = "Realizar exclusão"></td>
+            </tr>        
+        </table>  
+    </form> 
+        <button id="myButton" class="float-left submit-button">Voltar ao menu de motorista</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "./OpcoesMoto.html";
+        };
+    </script>
+</body>
+</html>
